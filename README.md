@@ -1,131 +1,79 @@
-Full Stack Task Manager App
+# Full Stack Task Manager App
 
 A full-featured task manager application with a separate front-end and back-end.
 
-Description
+## Description
 
 This is a simple yet powerful task manager application that allows users to create, manage, and track their tasks. The application is built with a modern full-stack architecture, featuring a React front-end and a Node.js/Express back-end, with MongoDB for data storage.
 
-Features
+## Features
 
-    Create, Read, Update, and Delete (CRUD) tasks.
+* **Create, Read, Update, and Delete (CRUD)** tasks.
+* User-friendly interface.
+* RESTful API for task management.
+* MongoDB database integration.
 
-    User-friendly interface.
+## Tech Stack
 
-    RESTful API for task management.
+* **Front-End**: React
+* **Back-End**: Node.js, Express.js
+* **Database**: MongoDB
 
-    MongoDB database integration.
-
-Tech Stack
-
-    Front-End: React
-
-    Back-End: Node.js, Express.js
-
-    Database: MongoDB
-
-Getting Started
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Prerequisites
+### Prerequisites
 
 You will need the following software installed on your machine:
 
-    Node.js
+* [Node.js](https://nodejs.org/)
+* [npm](https://www.npmjs.com/) (comes with Node.js)
+* A [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account or a local MongoDB installation.
 
-    npm (comes with Node.js)
+### Installation
 
-    A MongoDB Atlas account or a local MongoDB installation.
-
-Full Stack Task Manager App
-
-A full-featured task manager application with a separate front-end and back-end.
-
-Description
-
-This is a simple yet powerful task manager application that allows users to create, manage, and track their tasks. The application is built with a modern full-stack architecture, featuring a React front-end and a Node.js/Express back-end, with MongoDB for data storage.
-
-Features
-
-    Create, Read, Update, and Delete (CRUD) tasks.
-
-    User-friendly interface.
-
-    RESTful API for task management.
-
-    MongoDB database integration.
-
-Tech Stack
-
-    Front-End: React
-
-    Back-End: Node.js, Express.js
-
-    Database: MongoDB
-
-Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-Prerequisites
-
-You will need the following software installed on your machine:
-
-    Node.js
-
-    npm (comes with Node.js)
-
-    A MongoDB Atlas account or a local MongoDB installation.
-
-Installation
-
-    Clone the repository:
-    Bash
-
-git clone https://github.com/tyronemt/full-stack-task-manager-app.git
-
-Navigate to the project directory:
-Bash
-
-cd full-stack-task-manager-app
-
-Install back-end dependencies:
-Bash
-
-cd backend
-npm install
-
-Install front-end dependencies:
-Bash
-
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/tyronemt/full-stack-task-manager-app.git](https://github.com/tyronemt/full-stack-task-manager-app.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd full-stack-task-manager-app
+    ```
+3.  **Install back-end dependencies:**
+    ```sh
+    cd backend
+    npm install
+    ```
+4.  **Install front-end dependencies:**
+    ```sh
     cd ../frontend
     npm install
+    ```
 
-Configuration
+### Configuration
 
 You will need to connect the application to your MongoDB database.
 
-    Create a .env file in the backend directory.
-
-    Add your MongoDB connection string to the .env file:
-
+1.  Create a `.env` file in the `backend` directory.
+2.  Add your MongoDB connection string to the `.env` file:
+    ```
     MONGO_URI=your_mongodb_connection_string
+    ```
 
-Running the Application
+### Running the Application
 
-    Run the back-end server:
-    From the backend directory, run:
-    Bash
+1.  **Run the back-end server:**
+    From the `backend` directory, run:
+    ```sh
+    npm run dev
+    ```
+    The back-end server will start on `http://localhost:5000` (or the port specified in your configuration).
 
-npm run dev
-
-The back-end server will start on http://localhost:5000 (or the port specified in your configuration).
-
-Run the front-end application:
-From the frontend directory, run:
-Bash
-
-npm start
-
-The front-end development server will start, and you can view the application in your browser at http://localhost:3000.
+2.  **Run the front-end application:**
+    From the `frontend` directory, run:
+    ```sh
+    npm start
+    ```
+    The front-end development server will start, and you can view the application in your browser at `http://localhost:3000`.
