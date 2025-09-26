@@ -32,7 +32,7 @@ const TaskForm = () => {
       setError(null)
       setTitle('')
       setDescription('')
-      setCompleted('')
+      setCompleted(false)
       setEmptyFields([])
       console.log('new task added:', json)
       dispatch({type: 'CREATE_TASK', payload: json})
