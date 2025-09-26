@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 })
 
 app.use(cors({
-  origin: "https://full-stack-task-manager-app-omega.vercel.app/p" 
+  origin: "https://full-stack-task-manager-app-omega.vercel.app" 
 }));
 
 //routes
