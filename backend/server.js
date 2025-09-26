@@ -3,6 +3,7 @@ require('dotenv').config()
 const express = require('express')
 const tasksRoutes = require('./routes/tasks')
 const mongoose = require('mongoose')
+const cors = require('cors');
 
 
 const app = express()
@@ -14,6 +15,10 @@ app.use((req, res, next) => {
   console.log(req.path, req.method)
   next()
 })
+
+app.use(cors({
+  origin: "https://full-stack-task-manager-app-omega.vercel.app/p" 
+}));
 
 //routes
 app.use('/api/tasks', tasksRoutes)
