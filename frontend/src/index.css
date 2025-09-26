@@ -130,3 +130,7 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:checked::before {
   transform: translateX(20px);
 }
+
+input.error {
+  border: 1 px solid var(--error);
+}
