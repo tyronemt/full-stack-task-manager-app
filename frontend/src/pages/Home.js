@@ -8,7 +8,7 @@ const Home = () => {
     const {tasks, dispatch} =  useTasksContext();
     useEffect(() => {
         const fetchTasks = async () => {
-            const res = await fetch('/api/tasks');
+            const res = await fetch(process.env.REACT_APP_API_URL + '/api/tasks');
             const data = await res.json();
 
             if (res.ok) {
