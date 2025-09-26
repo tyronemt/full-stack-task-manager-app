@@ -6,7 +6,7 @@ const TaskDetails = ({ task }) => {
     const { dispatch } = useTasksContext()
 
     const handleClick = async () => {
-        const response = await fetch(process.env.REACT_APP_API_URL + '/api/tasks/' + task._id, {
+        const response = await fetch('/api/tasks/' + task._id, {
             method: 'DELETE'
         })
         const json = await response.json()
